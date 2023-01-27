@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Avia Champion</string>
+    <string name="facebook_app_id">537368148304496</string>
+    <string name="facebook_client_token">77429de13eb2a237f83ef8110f74b594</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="difff">
+        <item>EASY</item>
+        <item>NORMAL</item>
+        <item>HARD</item>
+        <item>EXTREME</item>
+    </string-array>
+</resources>

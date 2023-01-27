@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mmmmaaaim"
+    app:startDestination="@id/m1Fragment">
+
+    <fragment
+        android:id="@+id/m1Fragment"
+        android:name="com.superking.parchisi.stard.M1Fragment"
+        android:label="fragment_m1"
+        tools:layout="@layout/fragment_m1" >
+        <action
+            android:id="@+id/action_m1Fragment_to_coonnnyFragment"
+            app:destination="@id/coonnnyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coonnnyFragment"
+        android:name="com.superking.parchisi.stard.CoonnnyFragment"
+        android:label="fragment_coonnny"
+        tools:layout="@layout/fragment_coonnny" >
+        <action
+            android:id="@+id/action_coonnnyFragment_to_seccMFragment"
+            app:destination="@id/seccMFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seccMFragment"
+        android:name="com.superking.parchisi.stard.SeccMFragment"
+        android:label="fragment_secc_m"
+        tools:layout="@layout/fragment_secc_m" >
+        <action
+            android:id="@+id/action_seccMFragment_to_beeefffFragment"
+            app:destination="@id/beeefffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beeefffFragment"
+        android:name="com.superking.parchisi.stard.BeeefffFragment"
+        android:label="fragment_beeefff"
+        tools:layout="@layout/fragment_beeefff" >
+        <action
+            android:id="@+id/action_beeefffFragment_to_fillloFragment"
+            app:destination="@id/fillloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fillloFragment"
+        android:name="com.superking.parchisi.stard.FillloFragment"
+        android:label="fragment_filllo"
+        tools:layout="@layout/fragment_filllo" />
+</navigation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/baaaaa"
+    android:layout_height="match_parent"
+    tools:context=".S3Fragment">
+
+    <ImageView
+        android:id="@+id/gthhyhyyh"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/hyhyhyhyhy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/h1"
+        android:layout_width="90dp"
+        app:layout_constraintEnd_toStartOf="@id/h2"
+        android:layout_height="90dp"
+        android:src="@drawable/g1"
+        app:layout_constraintTop_toBottomOf="@id/gthhyhyyh"
+        app:layout_constraintBottom_toTopOf="@id/tv_restart_test"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/h2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/g3"
+        app:layout_constraintTop_toBottomOf="@id/gthhyhyyh"
+        app:layout_constraintBottom_toTopOf="@id/tv_restart_test"
+        app:layout_constraintStart_toEndOf="@id/h1"
+        app:layout_constraintEnd_toStartOf="@id/h3"/>
+
+    <ImageView
+        android:id="@+id/h3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/g4"
+        app:layout_constraintTop_toBottomOf="@id/gthhyhyyh"
+        app:layout_constraintStart_toEndOf="@id/h2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_restart_test" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_restart_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/montserrat_black"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Next game loading..."
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dovn_text_looogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:fontFamily="@font/montserrat_black"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
