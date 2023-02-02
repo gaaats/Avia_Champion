@@ -1,31 +1,31 @@
-package com.superking.parchisi.stard
+package com.superking.parchisi.stard.fraggg
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.appsflyer.AppsFlyerLib
-import com.superking.parchisi.stard.conna.Util.ad_id
+import com.superking.parchisi.stard.R
+import com.superking.parchisi.stard.conna.Util.frorirfhrfhrf
 import com.superking.parchisi.stard.conna.Util.gjitgjgti
-import com.superking.parchisi.stard.conna.Util.aps_id
-import com.superking.parchisi.stard.conna.Util.codeCode
-import com.superking.parchisi.stard.conna.Util.geoCo
-import com.superking.parchisi.stard.conna.Util.instId
-import com.superking.parchisi.stard.conna.Util.keyVAl
+import com.superking.parchisi.stard.conna.Util.frrfhihfrhrfu
+import com.superking.parchisi.stard.conna.Util.hrfuhhrfhrf
+import com.superking.parchisi.stard.conna.Util.frrfrfhhfrhurfhurfh
+import com.superking.parchisi.stard.conna.Util.frrfhrfhfrhrfhu
+import com.superking.parchisi.stard.conna.Util.ffrrfhrfrfhurf
 import com.superking.parchisi.stard.conna.Util.gtgtjgtijgt
 import com.superking.parchisi.stard.conna.Util.gtntggt
-import com.superking.parchisi.stard.conna.Util.nammgttg
-import com.superking.parchisi.stard.conna.Util.one
+import com.superking.parchisi.stard.conna.Util.frrfhirfhrfhurfh
+import com.superking.parchisi.stard.conna.Util.gtjgthtghugt
 import com.superking.parchisi.stard.conna.Util.hyhyy5h5
-import com.superking.parchisi.stard.conna.Util.subFivegt
-import com.superking.parchisi.stard.conna.Util.subFourgttg
-import com.superking.parchisi.stard.conna.Util.subOne
+import com.superking.parchisi.stard.conna.Util.frhrfhrfhrfurf
+import com.superking.parchisi.stard.conna.Util.gtjtgitutg
+import com.superking.parchisi.stard.conna.Util.gtoijjgtjgti
 import com.superking.parchisi.stard.conna.Util.subSixgttg
 import com.superking.parchisi.stard.conna.Util.vfbfygrfrfy
 import com.superking.parchisi.stard.conna.Util.gtigtihgt
@@ -53,17 +53,17 @@ class FillloFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val hyhyujikkiik = shareP.getString(geoCo, null)
+        val hyhyujikkiik = shareP.getString(frrfrfhhfrhurfhurfh, null)
         val frgthybvvvffv = shareP.getString("appCamp", null)
         val vgthyhyhy = shareP.getString("deepSt", null)
-        val gtgkpgtgtj = shareP.getString(codeCode, null)
+        val gtgkpgtgtj = shareP.getString(hrfuhhrfhrf, null)
         val gtgtjtgjigt = shareP.getString(gjitgjgti, null)
         val wvgttggt = shareP.getString(gtigtihgt, null)
         val mainId = shareP.getString("mainId", null)
         val pack = hyhyy5h5
         val gigthugt = Build.VERSION.RELEASE
         val vfbvedfedfed = shareP.getString(gtntggt, null)
-        val frnrfrfrf: String? = shareP.getString(instId, null)
+        val frnrfrfrf: String? = shareP.getString(frrfhrfhfrhrfhu, null)
 
         val gtgthigduegfde = Intent(activity, ViviviivvActivity2::class.java)
         val rfbrfbbrf = Intent(activity, GaaammmmuActivity2::class.java)
@@ -71,20 +71,20 @@ class FillloFragment : Fragment() {
         val cdvdcvgcdvg = AppsFlyerLib.getInstance().getAppsFlyerUID(gtgthyhyhy)
         AppsFlyerLib.getInstance().setCollectAndroidID(true)
 
-        shareP.edit().putString(aps_id, cdvdcvgcdvg).apply()
+        shareP.edit().putString(frrfhihfrhrfu, cdvdcvgcdvg).apply()
 
         val frgfrgfr =
-            "$wvgttggt$subOne$frgthybvvvffv&$one$cdvdcvgcdvg&$ad_id$mainId&$subFourgttg$pack&$subFivegt$gigthugt&$subSixgttg$nammgttg"
-        val fryugrfgrfy = "$wvgttggt$one$vfbvedfedfed&$ad_id$frnrfrfrf&$subFourgttg$pack&$subFivegt$gigthugt&$subSixgttg$nammgttg"
+            "$wvgttggt$gtoijjgtjgti$frgthybvvvffv&$gtjgthtghugt$cdvdcvgcdvg&$frorirfhrfhrf$mainId&$gtjtgitutg$pack&$frhrfhrfhrfurf$gigthugt&$subSixgttg$frrfhirfhrfhurfh"
+        val fryugrfgrfy = "$wvgttggt$gtjgthtghugt$vfbvedfedfed&$frorirfhrfhrf$frnrfrfrf&$gtjtgitutg$pack&$frhrfhrfhrfurf$gigthugt&$subSixgttg$frrfhirfhrfhurfh"
         val hgtgthugt =
-            "$wvgttggt$subOne$vgthyhyhy&$one$cdvdcvgcdvg&$ad_id$mainId&$subFourgttg$pack&$subFivegt$gigthugt&$subSixgttg$vfbfygrfrfy"
+            "$wvgttggt$gtoijjgtjgti$vgthyhyhy&$gtjgthtghugt$cdvdcvgcdvg&$frorirfhrfhrf$mainId&$gtjtgitutg$pack&$frhrfhrfhrfurf$gigthugt&$subSixgttg$vfbfygrfrfy"
         val rfhhrfhrfrhf =
-            "$wvgttggt$subOne$vgthyhyhy&$one$vfbvedfedfed&$ad_id$frnrfrfrf&$subFourgttg$pack&$subFivegt$gigthugt&$subSixgttg$vfbfygrfrfy"
+            "$wvgttggt$gtoijjgtjgti$vgthyhyhy&$gtjgthtghugt$vfbvedfedfed&$frorirfhrfhrf$frnrfrfrf&$gtjtgitutg$pack&$frhrfhrfhrfurf$gigthugt&$subSixgttg$vfbfygrfrfy"
 
 
         when (gtgtjtgjigt) {
             "1" ->
-                if (frgthybvvvffv!!.contains(keyVAl)) {
+                if (frgthybvvvffv!!.contains(ffrrfhrfrfhurf)) {
                     shareP.edit().putString(gtgtjgtijgt, frgfrgfr).apply()
                     shareP.edit().putString("WebInt", "campaign").apply()
                     startActivity(gtgthigduegfde)

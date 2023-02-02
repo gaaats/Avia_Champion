@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/s1Fragment"
-        android:name="com.superking.parchisi.stard.S1Fragment"
+        android:name="com.superking.parchisi.stard.otther.S1Fragment"
         android:label="fragment_s1"
         tools:layout="@layout/fragment_s1" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/s2Fragment"
-        android:name="com.superking.parchisi.stard.S2Fragment"
+        android:name="com.superking.parchisi.stard.otther.S2Fragment"
         android:label="fragment_s2"
         tools:layout="@layout/fragment_s2" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/s3Fragment"
-        android:name="com.superking.parchisi.stard.S3Fragment"
+        android:name="com.superking.parchisi.stard.otther.S3Fragment"
         android:label="fragment_s3"
         tools:layout="@layout/fragment_s3" >
         <action

@@ -1,4 +1,4 @@
-package com.superking.parchisi.stard
+package com.superking.parchisi.stard.fraggg
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,8 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.superking.parchisi.stard.R
 import com.superking.parchisi.stard.conna.Util.gjitgjgti
-import com.superking.parchisi.stard.vievmod.ViMod
+import com.superking.parchisi.stard.vievmod.JOhfhirfhrfrfgfrgrf
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
@@ -26,7 +27,7 @@ class BeeefffFragment : Fragment() {
     }
 
 
-    val gt2gt2gt5tg by activityViewModel<ViMod>(named("MainModel"))
+    val gt2gt2gt5tg by activityViewModel<JOhfhirfhrfrfgfrgrf>(named("MainModel"))
     val g2tg5tg5: SharedPreferences by inject(named("SharedPreferences"))
     lateinit var gfgtgthgt: String
     private lateinit var frrhrhrfgfry: Context

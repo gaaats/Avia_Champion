@@ -1,4 +1,4 @@
-package com.superking.parchisi.stard
+package com.superking.parchisi.stard.otther
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
+import com.superking.parchisi.stard.R
 import com.superking.parchisi.stard.databinding.FragmentS3Binding
 import kotlinx.coroutines.delay
 import kotlin.random.Random

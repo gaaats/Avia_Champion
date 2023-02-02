@@ -3,29 +3,25 @@ package com.superking.parchisi.stard.vievmod
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.appsflyer.AFInAppEventParameterName
 import com.appsflyer.AppsFlyerConversionListener
 import com.appsflyer.AppsFlyerLib
 import com.facebook.applinks.AppLinkData
 import com.google.android.gms.ads.identifier.AdvertisingIdClient
-import com.superking.parchisi.stard.apii.hjuuiii
-import com.superking.parchisi.stard.apii.CountryRepo
+import com.superking.parchisi.stard.apii.IHhifrggfrryf
 import com.superking.parchisi.stard.apii.DevRepo
-import com.superking.parchisi.stard.apii.GeoDev
+import com.superking.parchisi.stard.apii.JOIfhuhrrfhrfh
+import com.superking.parchisi.stard.apii.hjuuiii
 import com.superking.parchisi.stard.conna.Util.gtghtggtd
-import io.branch.referral.util.BRANCH_STANDARD_EVENT
-import io.branch.referral.util.BranchEvent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
-class ViMod(
-    private val gtthyhyhy: CountryRepo,
+class JOhfhirfhrfrfgfrgrf(
+    private val gtthyhyhy: IHhifrggfrryf,
     private val dderfrfrf: DevRepo,
     private val ftghyujikikol: SharedPreferences,
     val hyhyhyhy: Application
@@ -52,8 +48,8 @@ class ViMod(
     val gthyhyyhhy: LiveData<hjuuiii>
         get() = hyhyyuujjuujuj
 
-    private val gtgtigthgti = MutableLiveData<GeoDev>()
-    val gtgttggthgthu: LiveData<GeoDev>
+    private val gtgtigthgti = MutableLiveData<JOIfhuhrrfhrfh>()
+    val gtgttggthgthu: LiveData<JOIfhuhrrfhrfh>
         get() = gtgtigthgti
 
     private val ggtjoitogtjiogtji = MutableLiveData<String>()
@@ -96,32 +92,6 @@ class ViMod(
             val hy2yu5u = data?.get("campaign").toString()
             ggtjoitogtjiogtji.postValue(hy2yu5u)
 
-            when (data?.get(AFInAppEventParameterName.AF_CHANNEL).toString()) {
-                "ACI_Search" -> {
-                    BranchEvent(BRANCH_STANDARD_EVENT.ACHIEVE_LEVEL).setDescription("ACI_Search")
-                        .logEvent(hyhyhyhy.applicationContext)
-
-                }
-                "ACI_Youtube" -> {
-                    BranchEvent(BRANCH_STANDARD_EVENT.SHARE).setDescription("ACI_Youtube")
-                        .logEvent(hyhyhyhy.applicationContext)
-
-
-                }
-                "ACI_Display" -> {
-                    BranchEvent(BRANCH_STANDARD_EVENT.RATE).setDescription("ACI_Display")
-                        .logEvent(hyhyhyhy.applicationContext)
-
-                }
-
-                else -> {
-
-                    BranchEvent(BRANCH_STANDARD_EVENT.VIEW_AD).setDescription("NoChannel")
-                        .logEvent(hyhyhyhy.applicationContext)
-                    Log.d("Branch Check", "I'm here, branch bitch! No source though")
-                }
-
-            }
 
         }
 

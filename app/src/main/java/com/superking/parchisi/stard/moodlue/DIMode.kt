@@ -5,12 +5,12 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.superking.parchisi.stard.apii.ApiInterfacetgtgtgtg
-import com.superking.parchisi.stard.apii.CountryRepo
+import com.superking.parchisi.stard.apii.frhhrfrfhrf
+import com.superking.parchisi.stard.apii.IHhifrggfrryf
 import com.superking.parchisi.stard.apii.DevRepo
-import com.superking.parchisi.stard.apii.HostInterfaceyhhyhyhy
-import com.superking.parchisi.stard.vievmod.BeamModel
-import com.superking.parchisi.stard.vievmod.ViMod
+import com.superking.parchisi.stard.apii.OJdjrfhhfrhrfhrf
+import com.superking.parchisi.stard.vievmod.JOfrrfhrfrfgfrgrfy
+import com.superking.parchisi.stard.vievmod.JOhfhirfhrfrfgfrgrf
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.qualifier.named
@@ -21,23 +21,23 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 val frrrfihrfh = module {
     viewModel (named("MainModel")){
-        ViMod((get(named("CountryRep"))), get(named("DevRep")), get(named("SharedPreferences")), get())
+        JOhfhirfhrfrfgfrgrf((get(named("CountryRep"))), get(named("DevRep")), get(named("SharedPreferences")), get())
     }
     viewModel(named("BeamModel")) {
-        BeamModel(get())
+        JOfrrfhrfrfgfrgrfy(get())
     }
 }
 
-val appModuleg22hy6hy = module {
+val frrihrfhrfrfrf = module {
 
-    single  <HostInterfaceyhhyhyhy> (named("HostInter")){
+    single  <OJdjrfhhfrhrfhrf> (named("HostInter")){
         get<Retrofit>(named("RetroDev"))
-            .create(HostInterfaceyhhyhyhy::class.java)
+            .create(OJdjrfhhfrhrfhrf::class.java)
     }
 
-    single <ApiInterfacetgtgtgtg> (named("ApiInter")) {
+    single <frhhrfrfhrf> (named("ApiInter")) {
         get<Retrofit>(named("RetroCountry"))
-            .create(ApiInterfacetgtgtgtg::class.java)
+            .create(frhhrfrfhrf::class.java)
     }
     single<Retrofit>(named("RetroCountry")) {
         Retrofit.Builder()
@@ -53,7 +53,7 @@ val appModuleg22hy6hy = module {
     }
 
     factory (named("CountryRep")) {
-        CountryRepo(get(named("ApiInter")))
+        IHhifrggfrryf(get(named("ApiInter")))
     }
 
     factory  (named("DevRep")){

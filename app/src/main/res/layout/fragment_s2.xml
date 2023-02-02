@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/baaaaa"
     android:layout_height="match_parent"
-    tools:context=".S2Fragment">
+    tools:context=".otther.S2Fragment">
 
 
     <androidx.constraintlayout.widget.Guideline

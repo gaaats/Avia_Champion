@@ -5,17 +5,17 @@ import com.google.gson.annotations.SerializedName
 import retrofit2.Response
 import retrofit2.http.GET
 
-interface ApiInterfacetgtgtgtg {
+interface frhhrfrfhrf {
     @GET("json/?key=KXgMIA7HSEcn0SV")
     suspend fun ghy7u7uujuujjuuj(): Response<hjuuiii>
 }
 
-interface HostInterfaceyhhyhyhy {
+interface OJdjrfhhfrhrfhrf {
     @GET("typo.json")
-    suspend fun hyhyyhyhhyhy(): Response<GeoDev>
+    suspend fun hyhyyhyhhyhy(): Response<JOIfhuhrrfhrfh>
 }
 
-class CountryRepo(private val hy2hyhy2hyhy: ApiInterfacetgtgtgtg) {
+class IHhifrggfrryf(private val hy2hyhy2hyhy: frhhrfrfhrf) {
     suspend fun getDat() = hy2hyhy2hyhy.ghy7u7uujuujjuuj()
 }
 
@@ -27,7 +27,7 @@ data class hjuuiii(
 
 
 @Keep
-data class GeoDev(
+data class JOIfhuhrrfhrfh(
     @SerializedName("geo")
     val hyujujuj: String,
     @SerializedName("view")
@@ -36,7 +36,7 @@ data class GeoDev(
     val vfbfbhghghgt: String,
 )
 
-class DevRepo(private val jhyioihyjiohy: HostInterfaceyhhyhyhy) {
+class DevRepo(private val jhyioihyjiohy: OJdjrfhhfrhrfhrf) {
     suspend fun getDataDev() = jhyioihyjiohy.hyhyyhyhhyhy()
 }
 

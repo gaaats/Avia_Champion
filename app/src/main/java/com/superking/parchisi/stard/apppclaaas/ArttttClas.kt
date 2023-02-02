@@ -4,13 +4,12 @@ import android.app.Application
 import android.content.Context
 import com.my.tracker.MyTracker
 import com.onesignal.OneSignal
-import com.superking.parchisi.stard.conna.Util.hhyjiohyjiohyjiohy
-import com.superking.parchisi.stard.conna.Util.instId
 import com.superking.parchisi.stard.conna.Util.gjihgthgt
 import com.superking.parchisi.stard.conna.Util.gtntggt
-import com.superking.parchisi.stard.moodlue.appModuleg22hy6hy
+import com.superking.parchisi.stard.conna.Util.hhyjiohyjiohyjiohy
+import com.superking.parchisi.stard.conna.Util.frrfhrfhfrhrfhu
+import com.superking.parchisi.stard.moodlue.frrihrfhrfrfrf
 import com.superking.parchisi.stard.moodlue.frrrfihrfh
-import io.branch.referral.Branch
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext
@@ -25,7 +24,6 @@ class ArttttClas:Application() {
         OneSignal.initWithContext(this)
         OneSignal.setAppId(hhyjiohyjiohyjiohy)
         jgtjogtojgtjgtotgjitgji()
-        Branch.getAutoInstance(this)
 
         val hyyuui = getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
         val gbghhyhyhyyh = getSharedPreferences("PREFS_NAME", 0)
@@ -39,7 +37,7 @@ class ArttttClas:Application() {
         if (gbghhyhyhyyh.getBoolean("my_first_time", true)) {
             hyhyjuujujujuj.setCustomUserId(hyjujuujuj)
             hyyuui.edit().putString(gtntggt, hyjujuujuj).apply()
-            hyyuui.edit().putString(instId, ghyyhhyjuukiik).apply()
+            hyyuui.edit().putString(frrfhrfhfrhrfhu, ghyyhhyjuukiik).apply()
             gbghhyhyhyyh.edit().putBoolean("my_first_time", false).apply()
         } else {
             val hyhyjuujuj = hyyuui.getString(gtntggt, hyjujuujuj)
@@ -52,13 +50,12 @@ class ArttttClas:Application() {
             androidContext(this@ArttttClas)
             modules(
                 listOf(
-                    frrrfihrfh, appModuleg22hy6hy
+                    frrrfihrfh, frrihrfhrfrfrf
                 )
             )
         }
     }
 
     private fun jgtjogtojgtjgtotgjitgji() {
-        Branch.enableTestMode()
     }
 }

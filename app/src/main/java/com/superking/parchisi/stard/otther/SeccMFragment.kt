@@ -1,4 +1,4 @@
-package com.superking.parchisi.stard
+package com.superking.parchisi.stard.otther
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,17 +8,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.superking.parchisi.stard.R
 import com.superking.parchisi.stard.conna.Util
-import com.superking.parchisi.stard.conna.Util.codeCode
+import com.superking.parchisi.stard.conna.Util.hrfuhhrfhrf
 import com.superking.parchisi.stard.conna.Util.gtigtihgt
-import com.superking.parchisi.stard.vievmod.ViMod
+import com.superking.parchisi.stard.vievmod.JOhfhirfhrfrfgfrgrf
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
 
 
 class SeccMFragment : Fragment() {
-    val hyhyhyhyh by activityViewModel<ViMod>(named("MainModel"))
+    val hyhyhyhyh by activityViewModel<JOhfhirfhrfrfgfrgrf>(named("MainModel"))
     lateinit var frrfrfrfrf: String
     lateinit var hkohyko: String
     lateinit var gtgtngtntgj: String
@@ -60,7 +61,7 @@ class SeccMFragment : Fragment() {
                 gtgtngtntgj = it.vfbfbhghghgt
                 hkohyko = it.hyjuujgfrerrf
 
-                vfbghyhyhy.edit().putString(codeCode, frrfrfrfrf).apply()
+                vfbghyhyhy.edit().putString(hrfuhhrfhrf, frrfrfrfrf).apply()
                 vfbghyhyhy.edit().putString(Util.gjitgjgti, gtgtngtntgj).apply()
                 vfbghyhyhy.edit().putString(gtigtihgt, hkohyko).apply()
 

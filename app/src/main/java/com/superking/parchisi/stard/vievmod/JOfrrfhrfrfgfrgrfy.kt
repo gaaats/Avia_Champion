@@ -9,7 +9,7 @@ import com.onesignal.OneSignal
 import org.json.JSONException
 import org.json.JSONObject
 
-class BeamModel(application: Application): ViewModel() {
+class JOfrrfhrfrfgfrgrfy(application: Application): ViewModel() {
 
     fun pushToOSgt2gt2(gt6gt62g: String) {
         OneSignal.setExternalUserId(

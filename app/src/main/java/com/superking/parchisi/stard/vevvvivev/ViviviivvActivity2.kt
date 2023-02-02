@@ -12,11 +12,11 @@ import android.provider.MediaStore
 import android.util.Log
 import android.webkit.*
 import android.widget.Toast
-import com.superking.parchisi.stard.conna.Util.aps_id
+import com.superking.parchisi.stard.conna.Util.frrfhihfrhrfu
 import com.superking.parchisi.stard.conna.Util.gtgtjgtijgt
 import com.superking.parchisi.stard.conna.Util.gtntggt
 import com.superking.parchisi.stard.databinding.ActivityViviviivv2Binding
-import com.superking.parchisi.stard.vievmod.BeamModel
+import com.superking.parchisi.stard.vievmod.JOfrrfhrfrfgfrgrfy
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.qualifier.named
 import java.io.File
@@ -27,7 +27,7 @@ import java.util.*
 class ViviviivvActivity2 : AppCompatActivity() {
 
 
-    private val gthyhyhyhy by viewModel<BeamModel>(
+    private val gthyhyhyhy by viewModel<JOfrrfhrfrfgfrgrfy>(
         named("BeamModel")
     )
 
@@ -41,7 +41,7 @@ class ViviviivvActivity2 : AppCompatActivity() {
         gthyhyhyhy.webSetgttg2gt2(g2hy5yh5y5y5)
 
         g2hy5yh5y5y5.webViewClient = CustomViewhyhyhy()
-        g2hy5yh5y5y5.webChromeClient = ChromeClientgttggtgt()
+        g2hy5yh5y5y5.webChromeClient = Hifhrffhrhrfhurfh()
         g2hy5yh5y5y5.loadUrl(bghyhygtfrededed())
     }
 
@@ -125,7 +125,7 @@ class ViviviivvActivity2 : AppCompatActivity() {
     }
 
 
-    inner class ChromeClientgttggtgt : WebChromeClient() {
+    inner class Hifhrffhrhrfhurfh : WebChromeClient() {
 
         override fun onShowFileChooser(
             view: WebView?,
@@ -193,7 +193,7 @@ class ViviviivvActivity2 : AppCompatActivity() {
         val link = hyjuuikikol.getString(gtgtjgtijgt, null)
         Log.d("Lololol", link.toString())
         val hyhy = hyjuuikikol.getString(gtntggt, null)
-        val afIdhy2yh2 = hyjuuikikol.getString(aps_id, null)
+        val afIdhy2yh2 = hyjuuikikol.getString(frrfhihfrhrfu, null)
 
 
 
